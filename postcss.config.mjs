@@ -3,9 +3,6 @@ const config = {
     "@tailwindcss/postcss": {},
   },
 };
+export default config;
 
-<<<<<<< HEAD
-export default config;
-=======
-export default config;
->>>>>>> origin/main
+
