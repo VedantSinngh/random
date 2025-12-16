@@ -19,7 +19,7 @@ export default function Home() {
             {loading && <NetflixLoader onComplete={() => setLoading(false)} />}
 
             {!loading && (
-                <div className="relative h-full flex flex-col font-mono">
+                <div className="relative h-full flex flex-col font-mono animate-fade-in">
                     <RotatingBackground />
                     {/* NEW Gradient Overlay */}
                     <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black to-transparent z-0"></div>

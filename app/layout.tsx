@@ -6,13 +6,13 @@ const pixelFont = Press_Start_2P({
   variable: "--font-pixel",
   subsets: ["latin"],
   weight: "400",
-  display: "optional",
+  display: "swap",
 });
 
 const monoFont = Roboto_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
-  display: "optional",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
