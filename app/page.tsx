@@ -59,7 +59,7 @@ export default function Home() {
                                 rel="noopener noreferrer"
                                 className="group relative px-6 py-2 text-sm font-semibold border border-red-500 rounded-md transition-all duration-300 overflow-hidden hover:border-red-600 hover:shadow-2xl hover:shadow-red-500/70 [text-shadow:none]"
                             >
-                                <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+                                <span className="relative z-10 transition-colors duration-300 text-white group-hover:text-white">
                                     About Us
                                 </span>
                                 <div className="absolute inset-0 bg-red-600 scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 rounded-md" />
