@@ -6,8 +6,15 @@ interface NetflixLoaderProps {
   onComplete?: () => void;
 }
 
+interface Line {
+  id: number;
+  color: string;
+  width: number;
+  delay: number;
+}
+
 export default function NetflixLoader({ onComplete }: NetflixLoaderProps) {
-  const [lines, setLines] = useState([]);
+  const [lines, setLines] = useState<Line[]>([]);
 
   useEffect(() => {
     // 1. Play Sound
@@ -55,7 +62,7 @@ export default function NetflixLoader({ onComplete }: NetflixLoaderProps) {
 
       {/* THE RIBBON EXPLOSION */}
       <div className={styles.ribbonContainer}>
-        {lines.map((line) => (
+        {lines.map((line: Line) => (
           <div
             key={line.id}
             className={styles.ribbon}
