@@ -39,7 +39,7 @@ export default function RotatingBackground() {
     return (
         <div 
             className="absolute inset-0 -z-10 w-full h-full"
-            style={{ background: 'linear-gradient(to bottom, #141414, #222)' }} // Subtle dark gradient as fallback
+            style={{ background: 'linear-gradient(to bottom, #0a0a0a, #000)' }} // Darker gradient for a "darkish" fade
         >
             {BACKGROUND_IMAGES.map((src, index) => (
                 <div
