@@ -1,4 +1,6 @@
 import BackgroundEffects from "@/components/BackgroundEffects";
+import MouseTrail from "@/components/MouseTrail";
+import HackerCursor from "@/components/HackerCursor";
 import type { Metadata } from "next";
 import { Press_Start_2P, Roboto_Mono } from "next/font/google";
 import "./globals.css";
@@ -31,6 +33,8 @@ export default function RootLayout({
       <body
         className={`${pixelFont.variable} ${monoFont.variable} antialiased`}
       >
+        <HackerCursor />
+        <MouseTrail />
         <BackgroundEffects />
         {children}
       </body>
