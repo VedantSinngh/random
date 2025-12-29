@@ -15,7 +15,7 @@ const MouseTrail = () => {
             return;
         }
 
-        const handleMouseMove = (e) => {
+        const handleMouseMove = (e: MouseEvent) => {
             const newParticle = {
                 id: Date.now(),
                 x: e.clientX,
