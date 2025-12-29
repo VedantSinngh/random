@@ -1,4 +1,9 @@
+import MatrixLoader from '@/components/MatrixLoader';
+
 export default function Loading() {
-  // You can add any UI inside Loading, including a Skeleton.
-  return <div className="h-screen w-screen"></div>;
+  return (
+    <div className="h-screen w-screen flex items-center justify-center">
+      <MatrixLoader />
+    </div>
+  );
 }
